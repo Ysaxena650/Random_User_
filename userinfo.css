@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(website.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+
+.bigbox{
+    width: 80%;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+    position: absolute;
+    z-index: -1;
+}
+
+.opacitybox{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(1, 146,75);
+    opacity: .5;
+    border-radius: 2rem;
+    position: relative;
+    position: absolute;
+    z-index: -2;
+    border-radius: 2rem;
+}
+
+.aboveimage{
+    width: 100%;
+    height: 10rem;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image{
+    background-color: rgb(56, 174, 83);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.information{
+    height: 73%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.leftpart{
+    width: 50%;
+    height: 100%;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    
+}
+
+.rightpart{
+    width: 50%;
+    height:100%;
+    border-top: 2px solid white;
+}
+
+
+.name,.age,.gender,.dob,.email,.phone{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    height: 16.66%;
+   
+    gap: 1.5rem;
+    
+}
+
+.location,.city,.country,.postcode,.street,.timezone{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    height: 16.66%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  
+}
+
+@media only screen and (max-width:950px){
+    
+    .image{
+        width: 20%;
+        height: 100%;
+        border-radius: 0%;
+    }
+
+    .image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .information p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:850px){
+   .container{
+    height: 150vh;
+   }
+ 
+    .bigbox{
+    height: 110vh;
+  }
+
+  .opacitybox{
+    height: 111vh;
+  }
+}
+
+@media only screen and (max-width:800px){
+    .information p{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width:660px){
+    .container{
+        height: 200vh;
+    }
+
+    .opacitybox{
+        height: 200vh;
+    }
+
+    .bigbox{
+        height: 197vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboveimage{
+        width: 80%;
+        height: 25%;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .information{
+        flex-direction: column;
+    }
+
+    .leftpart{
+        width: 100%;
+        border: none;
+
+    }
+
+    .rightpart{
+        width: 100%;
+        border: none;
+    }
+
+    .information p{
+        font-size: 1.5rem;
+        text-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:580px){
+    .information p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+
+    
+    .information p{
+        font-size: 1rem;
+    }
+}
+
